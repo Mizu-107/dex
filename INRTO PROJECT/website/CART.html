@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background: linear-gradient(#052659, #548383);
+}
+
+header {
+    
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    background: linear-gradient(to left,  #052659, #021024)
+}
+header a{
+    text-decoration: none; 
+    padding: 10px;  
+    font-size: 15px; 
+    color: white; 
+    background-color: #548383;
+}
+
+.cart {
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(#052659, #548383);
+
+}
+
+.cart-items {
+    width: 70%;
+}
+
+.cart-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+}
+
+.cart-item img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ddd;
+    
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.remove-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    
+}
+
+.cart-summary {
+    width: 25%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.checkout-btn {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+}
+.back{
+    text-align: end;
+}
+</style>
+</head>
+<body>
+     <header>
+        <h1>YOUR SHOPPING CART</h1>
+        <a href="/media/ccl402/76E8-CACF/INRTO PROJECT/website/shop.html" class="back">BACK</a>
+    </header>
+    
+    <table>
+
+        <section class="cart">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="/media/ccl402/76E8-CACF/INRTO PROJECT/mouse/1.webp" alt="Product 1">
+                    <div>
+                        <h3>Product 1</h3>
+                        <p>Price: ₱ 67.00</p>
+                        <div class="quantity">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="/media/ccl402/76E8-CACF/INRTO PROJECT/monitor/2.webp" alt="Product 2">
+                    <div>
+                        <h3>Product 2</h3>
+                        <p>₱ 7,600.00</p>
+                        <div class="quantity">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-summary" style="margin-left: 10px;">
+                <h3>Cart Summary</h3>
+                <p>Total: ₱ 7,667.00</p>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </section>
+    </table>
+        
+    </body>
+    </html>
